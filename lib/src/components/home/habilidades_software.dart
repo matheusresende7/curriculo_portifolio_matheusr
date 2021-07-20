@@ -3,7 +3,6 @@ import 'package:curriculo_portifolio_matheusr/src/styles/text_sizes.dart';
 import 'package:curriculo_portifolio_matheusr/src/widgets/texts/text_title.dart';
 import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
-import 'package:super_rich_text/super_rich_text.dart';
 
 class HabilidadesSoftware extends StatelessWidget {
   @override
@@ -24,14 +23,14 @@ class HabilidadesSoftware extends StatelessWidget {
 
           SizedBox(height: 60,),
 
-          SuperRichText(
-            text: Strings.habilidadesSoftwareLista,
+          Text(
+            Strings.habilidadesSoftwareLista,
             style: TextStyle(
               fontSize: TextSizes.medium,
               color: Theme.of(context).primaryColor,
               fontWeight: FontWeight.w400,
               letterSpacing: 2,
-              height: 2,
+              height: 4,
             ),
           ),
 

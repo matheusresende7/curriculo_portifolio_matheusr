@@ -1,6 +1,5 @@
 import 'package:curriculo_portifolio_matheusr/src/styles/text_sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:super_rich_text/super_rich_text.dart';
 
 class Text2Lines extends StatelessWidget {
 
@@ -37,12 +36,12 @@ class Text2Lines extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              SuperRichText(
-                text: this.text1,
+              Text(
+                this.text1,
                 style: TextStyle(
                   fontSize: TextSizes.medium,
                   color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w600,
                   letterSpacing: 2,
                 ),
               ),
@@ -55,7 +54,7 @@ class Text2Lines extends StatelessWidget {
                   style: TextStyle(
                     fontSize: TextSizes.small,
                     color: Theme.of(context).primaryColor,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.italic,
                     letterSpacing: 2,
                   ),

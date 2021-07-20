@@ -52,40 +52,40 @@ class Strings {
   static const String savingTime = 'Saving Time - Consultoria e Treinamento';
 
   ///Projetos
-  static const String cleanArchTDD = '*GITHUB:* CLEAN ARCHTECTURE - TDD - RESPONSIVIDADE';
-  static const String instagramClone = '*FIREBASE HOSTING:* INSTAGRAM CLONE';
-  static const String appBoards = '*PLAY STORE:* BOARDS INVESTIMENTOS';
-  static const String siteBoards = '*SITE:* BOARDS INVESTIMENTOS';
-  static const String curriculo = '*FIREBASE HOSTING:* CURRÍCULO';
+  static const String cleanArchTDD = 'GITHUB: CLEAN ARCHTECTURE - TDD - RESPONSIVIDADE';
+  static const String instagramClone = 'FIREBASE HOSTING: INSTAGRAM CLONE';
+  static const String appBoards = 'PLAY STORE: BOARDS INVESTIMENTOS';
+  static const String siteBoards = 'SITE: BOARDS INVESTIMENTOS';
+  static const String curriculo = 'FIREBASE HOSTING: CURRÍCULO';
 
   ///Habilidades
   static const String habilidadesSoftwareLista =
-      '• Criação do app mobile para *Android* e *iOS*, e versões *Web* e *Desktop*\n'
-      '• Prototipagem do projeto pelo *Figma*\n'
-      '• Utilização do *Flutter* como framework\n'
-      '• Desenvolvimento em linguagem *Dart*\n'
-      '• Utilização do *Android Studio* e *VS Code*\n'
-      '• Desenvolvimento com *programação orientada à objetos*\n'
-      '• Aplicação de *UI* e *UX* Design com *Material Design*\n'
-      '• Versionamento de código através do *Git*\n'
-      '• Utilização de repositório remoto pelo *GitHub*\n'
-      '• Gerenciamento de estado e programação reativa com *GetX*\n'
-      '• Consumo e integração de *APIs Rest* com *Postman* e *GraphQl*\n'
-      '• Backend através do *Firebase*\n'
-      '• Hospedagem através do *Firebase Hosting*\n'
-      '• Banco de dados local pelo *SQLite* e *CRUD*\n'
-      '• Arquitetura de software com *MVC*\n'
-      '• Aplicação de *Clean Code* e *Clean Architecture*\n'
-      '• Desenvolvimento utilizando *TDD*\n'
-      '• *CI/CD Pipeline* com Github Actions\n'
-      '• Realização de *testes unitários*, *de widgets*, *de integração*, *e2e* e *automatizados*\n'
-      '• Responsividade do app para *Mobile*, *Tablet*, *Web* e *Desktop*\n'
-      '• Criação *frontend* para web\n'
-      '• Desenvolvimento do site para o app em *Html*, *Css* e *Bootstrap*\n'
-      '• Publicação e atualização de aplicativo na *Play Store*\n'
-      '• Mockup do app através do *Canva*\n'
-      '• Gerenciamento do projeto através do *Trello* e *Jira*\n'
-      '• Aplicação de conceitos de metodologias ágeis: *Scrum* e *Kanban*\n';
+      '• Criação do app mobile para Android e iOS, e versões Web e Desktop\n'
+      '• Prototipagem do projeto pelo Figma\n'
+      '• Utilização do Flutter como framework\n'
+      '• Desenvolvimento em linguagem Dart\n'
+      '• Utilização do Android Studio e VS Code\n'
+      '• Desenvolvimento com programação orientada à objetos\n'
+      '• Aplicação de UI e UX Design com Material Design\n'
+      '• Versionamento de código através do Git\n'
+      '• Utilização de repositório remoto pelo GitHub\n'
+      '• Gerenciamento de estado e programação reativa com GetX\n'
+      '• Consumo e integração de APIs Rest com Postman e GraphQl\n'
+      '• Backend através do Firebase\n'
+      '• Hospedagem através do Firebase Hosting\n'
+      '• Banco de dados local pelo SQLite e CRUD\n'
+      '• Arquitetura de software com MVC\n'
+      '• Aplicação de Clean Code e Clean Architecture\n'
+      '• Desenvolvimento utilizando TDD\n'
+      '• CI/CD Pipeline com Github Actions\n'
+      '• Realização de testes unitários, de widgets, de integração, e2e e automatizados\n'
+      '• Responsividade do app para Mobile, Tablet, Web e Desktop\n'
+      '• Criação frontend para web\n'
+      '• Desenvolvimento do site para o app em Html, Css e Bootstrap\n'
+      '• Publicação e atualização de aplicativo na Play Store\n'
+      '• Mockup do app através do Canva\n'
+      '• Gerenciamento do projeto através do Trello e Jira\n'
+      '• Aplicação de conceitos de metodologias ágeis: Scrum e Kanban\n';
   static const String habilidadesEngenhariaLista =
       '• Gestão financeira\n'
       '• Viabilidade de negócios\n'

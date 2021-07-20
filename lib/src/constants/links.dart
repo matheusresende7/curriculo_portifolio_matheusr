@@ -16,6 +16,6 @@ class Links {
   static const String siteBoards =
       'https://matheusresende7.github.io/boards-investimentos-site/';
   static const String curriculo =
-      'https://calmfinance.web.app/#/';
+      'https://curriculo-portifolio-matheus.web.app/#/';
 
 }

@@ -29,93 +29,91 @@ class Home extends StatelessWidget {
                   color: Theme.of(context).primaryColor,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(32, 50, 32, 50),
-                    child: Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
 
-                          ClipOval(
-                            child: Image.asset(
-                              Images.fotoPerfil,
-                              width: 220,
-                              fit: BoxFit.cover,
-                            ),
+                        ClipOval(
+                          child: Image.asset(
+                            Images.fotoPerfil,
+                            width: 220,
+                            fit: BoxFit.cover,
                           ),
+                        ),
 
-                          /*ClipOval(
-                            child: Icon(
-                              Icons.person_pin,
-                              size: 100,
+                        /*ClipOval(
+                          child: Icon(
+                            Icons.person_pin,
+                            size: 100,
+                            color: Theme.of(context).accentColor,
+                          ),
+                        ),*/
+
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                            SizedBox(height: 50,),
+
+                            Text(
+                              Strings.nome,
+                              style: TextStyle(
+                                fontSize: 40,
+                                color: Theme.of(context).accentColor,
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 2,
+                              ),
+                            ),
+
+                            SizedBox(height: 10,),
+
+                            Text(
+                              Strings.profissoes,
+                              style: TextStyle(
+                                fontSize: TextSizes.large,
+                                color: Theme.of(context).accentColor,
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 2,
+                              ),
+                            ),
+
+                            SizedBox(height: 30,),
+
+                            IconText(
+                              text: Strings.nacionalidade,
+                              icon: IconsData.nacionalidade,
                               color: Theme.of(context).accentColor,
                             ),
-                          ),*/
 
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            SizedBox(height: 10,),
 
-                              SizedBox(height: 50,),
+                            IconText(
+                              text: Strings.localizacao,
+                              icon: IconsData.localizacao,
+                              color: Theme.of(context).accentColor,
+                            ),
 
-                              Text(
-                                Strings.nome,
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  color: Theme.of(context).accentColor,
-                                  fontWeight: FontWeight.w400,
-                                  letterSpacing: 2,
-                                ),
-                              ),
+                            SizedBox(height: 30,),
 
-                              SizedBox(height: 10,),
+                            TextButtonDafault(
+                              text: Strings.linkedin,
+                              image: Images.linkedIn,
+                              onPressed: () {_.linkToLinkedin();},
+                            ),
 
-                              Text(
-                                Strings.profissoes,
-                                style: TextStyle(
-                                  fontSize: TextSizes.large,
-                                  color: Theme.of(context).accentColor,
-                                  fontWeight: FontWeight.w400,
-                                  letterSpacing: 2,
-                                ),
-                              ),
+                            SizedBox(height: 20,),
 
-                              SizedBox(height: 30,),
+                            OutlinedButtonDefault(
+                              text: Strings.github,
+                              image: Images.github,
+                              onPressed: () {_.linkToGithub();},
+                            ),
 
-                              IconText(
-                                text: Strings.nacionalidade,
-                                icon: IconsData.nacionalidade,
-                                color: Theme.of(context).accentColor,
-                              ),
+                          ],
+                        ),
 
-                              SizedBox(height: 10,),
-
-                              IconText(
-                                text: Strings.localizacao,
-                                icon: IconsData.localizacao,
-                                color: Theme.of(context).accentColor,
-                              ),
-
-                              SizedBox(height: 30,),
-
-                              TextButtonDafault(
-                                text: Strings.linkedin,
-                                image: Images.linkedIn,
-                                onPressed: () {_.linkToLinkedin();},
-                              ),
-
-                              SizedBox(height: 20,),
-
-                              OutlinedButtonDefault(
-                                text: Strings.github,
-                                image: Images.github,
-                                onPressed: () {_.linkToGithub();},
-                              ),
-
-                            ],
-                          ),
-
-                        ],
-                      ),
+                      ],
                     ),
                   ),
                 ),
@@ -180,55 +178,6 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ),
-
-                /*Expanded(
-                  child: ListView(
-                    physics: BouncingScrollPhysics(),
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-
-                          SizedBox(height: 90,),
-
-                          Container(
-                            height: 100,
-                            child: ListView(
-                              physics: BouncingScrollPhysics(),
-                              scrollDirection: Axis.horizontal,
-                              children: [
-
-                                TabButtons(
-                                  onTap: (value) {_.tabButtonOnTap(value);},
-                                  tabs: _.tabButtonOptionsStrings,
-                                  currentTab: _.tabButton,
-                                  height: 80,
-                                  radius: 100,
-                                  tabWidth: 220,
-                                  tabheight: 80,
-                                  fontWeight: FontWeight.w500,
-                                  activeColor: Theme.of(context).accentColor,
-                                  textColor: Theme.of(context).backgroundColor,
-                                  unActiveTextColor: Theme.of(context).hoverColor,
-                                  backgroundColor: Theme.of(context).disabledColor,
-                                ),
-
-                              ],
-                            ),
-                          ),
-
-                          SizedBox(height: 50,),
-
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
-                            child: _.widgetMainContent(),
-                          ),
-
-                        ],
-                      )
-                    ],
-                  ),
-                ),*/
 
               ],
             ),
