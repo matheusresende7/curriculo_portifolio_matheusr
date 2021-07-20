@@ -16,58 +16,64 @@ class OutlinedButtonDefault extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return OutlinedButton(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(70, 12, 70, 12),
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+    return InkWell(
+      onTap: this.onPressed,
+      highlightColor: Colors.transparent,
+      splashColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      child: OutlinedButton(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(70, 12, 70, 12),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
 
-            Image.asset(
-              this.image,
-              width: 25,
-              height: 25,
-              fit: BoxFit.cover,
-            ),
-
-            SizedBox(width: 20,),
-
-            Text(
-              this.text ?? '',
-              style: TextStyle (
-                color: Theme.of(context).accentColor,
-                fontSize: TextSizes.medium,
-                fontWeight: FontWeight.w500,
-                letterSpacing: 1,
+              Image.asset(
+                this.image,
+                width: 25,
+                height: 25,
+                fit: BoxFit.cover,
               ),
-            ),
 
-          ],
-        ),
-      ),
-      style: ButtonStyle(
-        shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
+              SizedBox(width: 20,),
+
+              Text(
+                this.text ?? '',
+                style: TextStyle (
+                  color: Theme.of(context).accentColor,
+                  fontSize: TextSizes.medium,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 1,
+                ),
+              ),
+
+            ],
           ),
         ),
-        side: MaterialStateProperty.all(
-          BorderSide.lerp(
-              BorderSide(
-                style: BorderStyle.solid,
-                color: Theme.of(context).accentColor,
-                width: 1,
-              ),
-              BorderSide(
-                style: BorderStyle.solid,
-                color: Theme.of(context).accentColor,
-                width: 1,
-              ),
-              10.0),
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50),
+            ),
+          ),
+          side: MaterialStateProperty.all(
+            BorderSide.lerp(
+                BorderSide(
+                  style: BorderStyle.solid,
+                  color: Theme.of(context).accentColor,
+                  width: 1,
+                ),
+                BorderSide(
+                  style: BorderStyle.solid,
+                  color: Theme.of(context).accentColor,
+                  width: 1,
+                ),
+                10.0),
+          ),
         ),
+        onPressed: this.onPressed ?? () {},
       ),
-      onPressed: this.onPressed ?? () {},
     );
 
   }

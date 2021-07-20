@@ -30,7 +30,7 @@ class HabilidadesEngenharia extends StatelessWidget {
               color: Theme.of(context).primaryColor,
               fontWeight: FontWeight.w400,
               letterSpacing: 2,
-              height: 4,
+              height: 3,
             ),
           ),
 

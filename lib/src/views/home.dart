@@ -105,7 +105,7 @@ class Home extends StatelessWidget {
                             SizedBox(height: 20,),
 
                             OutlinedButtonDefault(
-                              text: Strings.github, 
+                              text: Strings.github,
                               image: Images.github,
                               onPressed: () {_.linkToGithub();},
                             ),
