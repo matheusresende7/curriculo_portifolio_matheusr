@@ -17,5 +17,7 @@ class Links {
       'https://matheusresende7.github.io/boards-investimentos-site/';
   static const String curriculo =
       'https://curriculo-portifolio-matheus.web.app/#/';
+  static const String projetoTeste =
+      'https://github.com/matheusresende7/card_seu_resumo';
 
 }

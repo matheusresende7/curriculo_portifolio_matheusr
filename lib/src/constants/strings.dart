@@ -52,11 +52,13 @@ class Strings {
   static const String savingTime = 'Saving Time - Consultoria e Treinamento';
 
   ///Projetos
-  static const String cleanArchTDD = 'GITHUB: CLEAN ARCHTECTURE - TDD - RESPONSIVIDADE';
+  static const String acessePeloLink = '- Acesse pelo link:  ';
+  static const String cleanArchTDD = 'GITHUB: TDD - CLEAN ARCHTECTURE - RESPONSIVIDADE';
   static const String instagramClone = 'FIREBASE HOSTING: INSTAGRAM CLONE';
   static const String appBoards = 'PLAY STORE: BOARDS INVESTIMENTOS';
   static const String siteBoards = 'SITE: BOARDS INVESTIMENTOS';
   static const String curriculo = 'FIREBASE HOSTING: CURRÍCULO';
+  static const String projetoTeste = 'GITHUB: PROJETO COMPLETO TESTE';
 
   ///Habilidades
   static const String habilidadesSoftwareLista =

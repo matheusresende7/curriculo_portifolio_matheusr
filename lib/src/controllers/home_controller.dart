@@ -6,6 +6,7 @@ import 'package:curriculo_portifolio_matheusr/src/components/home/habilidades_so
 import 'package:curriculo_portifolio_matheusr/src/components/home/idiomas.dart';
 import 'package:curriculo_portifolio_matheusr/src/components/home/pagina_inicial.dart';
 import 'package:curriculo_portifolio_matheusr/src/components/home/projetos.dart';
+import 'package:curriculo_portifolio_matheusr/src/constants/images.dart';
 import 'package:curriculo_portifolio_matheusr/src/constants/links.dart';
 import 'package:curriculo_portifolio_matheusr/src/constants/strings.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +47,10 @@ class HomeController extends GetxController {
 
   void linkToCurriculo () async {
     await launch(Links.curriculo);
+  }
+
+  void linkToProjetoTeste () async {
+    await launch(Links.projetoTeste);
   }
 
 
@@ -97,6 +102,36 @@ class HomeController extends GetxController {
     }
     return null;
   }
+
+
+
+  //*******************************IMAGES LISTS*********************************
+  double imagesHeight = 400;
+
+  List imagesAppBoards = [
+    Images.appBoards1,
+    Images.appBoards2,
+    Images.appBoards3,
+    Images.appBoards4,
+    Images.appBoards5,
+    Images.appBoards6,
+  ];
+
+  List imagesSiteBoards = [
+    Images.siteBoards1,
+    Images.siteBoards2,
+    Images.siteBoards3,
+    Images.siteBoards4,
+  ];
+
+  List imagesProjetoTeste = [
+    Images.projetoTeste1,
+    Images.projetoTeste2,
+    Images.projetoTeste3,
+    Images.projetoTeste4,
+    Images.projetoTeste5,
+    Images.projetoTeste6,
+  ];
 
 
 
