@@ -23,7 +23,7 @@ class OutlinedButtonDefault extends StatelessWidget {
       hoverColor: Colors.transparent,
       child: OutlinedButton(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(70, 12, 70, 12),
+          padding: const EdgeInsets.fromLTRB(60, 12, 60, 12),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,

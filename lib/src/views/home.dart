@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                 Container(
                   color: Theme.of(context).primaryColor,
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(32, 50, 32, 50),
+                    padding: const EdgeInsets.fromLTRB(20, 50, 20, 50),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,7 +37,7 @@ class Home extends StatelessWidget {
                         ClipOval(
                           child: Image.asset(
                             Images.fotoPerfil,
-                            width: 220,
+                            width: 200,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -59,7 +59,7 @@ class Home extends StatelessWidget {
                             Text(
                               Strings.nome,
                               style: TextStyle(
-                                fontSize: 40,
+                                fontSize: 35,
                                 color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.w400,
                                 letterSpacing: 2,
@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
                             Text(
                               Strings.profissoes,
                               style: TextStyle(
-                                fontSize: TextSizes.large,
+                                fontSize: TextSizes.medium,
                                 color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.w400,
                                 letterSpacing: 2,
@@ -123,23 +123,14 @@ class Home extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
 
-                      SizedBox(height: 90,),
+                      SizedBox(height: 40,),
 
                       Container(
                         height: 100,
-                        decoration: BoxDecoration(
-                          border: Border(
-                            bottom: BorderSide(
-                                width: 0.5,
-                                color: Theme.of(context).primaryColor
-                            ),
-                          ),
-                        ),
                         child: ListView(
                           physics: BouncingScrollPhysics(),
                           scrollDirection: Axis.horizontal,
                           children: [
-
                             TabButtons(
                               onTap: (value) {_.tabButtonOnTap(value);},
                               tabs: _.tabButtonOptionsStrings,
@@ -154,10 +145,13 @@ class Home extends StatelessWidget {
                               unActiveTextColor: Theme.of(context).hoverColor,
                               backgroundColor: Theme.of(context).disabledColor,
                             ),
-
                           ],
                         ),
                       ),
+
+                      SizedBox(height: 40,),
+
+                      Container(height: 0.5, color: Theme.of(context).primaryColor,),
 
                       Expanded(
                         child: ListView(

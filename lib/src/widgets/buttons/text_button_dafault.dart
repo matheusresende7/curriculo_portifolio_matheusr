@@ -18,7 +18,7 @@ class TextButtonDafault extends StatelessWidget {
 
     return TextButton(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(77, 12, 77, 12),
+        padding: const EdgeInsets.fromLTRB(67, 12, 67, 12),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

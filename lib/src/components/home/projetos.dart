@@ -1,8 +1,8 @@
 import 'package:curriculo_portifolio_matheusr/src/constants/icons_data.dart';
-import 'package:curriculo_portifolio_matheusr/src/constants/images.dart';
 import 'package:curriculo_portifolio_matheusr/src/constants/links.dart';
 import 'package:curriculo_portifolio_matheusr/src/constants/strings.dart';
 import 'package:curriculo_portifolio_matheusr/src/controllers/home_controller.dart';
+import 'package:curriculo_portifolio_matheusr/src/widgets/listviews/listview_images.dart';
 import 'package:curriculo_portifolio_matheusr/src/widgets/texts/text_2lines.dart';
 import 'package:curriculo_portifolio_matheusr/src/widgets/texts/text_title.dart';
 import 'package:delayed_display/delayed_display.dart';
@@ -58,24 +58,10 @@ class Projetos extends StatelessWidget {
 
           SizedBox(height: 20,),
 
-          SizedBox(
+          ListviewImages(
             height: control.imagesHeight,
-            child: ListView.builder(
-              physics: BouncingScrollPhysics(),
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemCount: control.imagesAppBoards.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
-                  child: Image.asset(
-                    control.imagesAppBoards[index],
-                    height: control.imagesHeight,
-                    fit: BoxFit.cover,
-                  ),
-                );
-              },
-            ),
+            itemCount: control.imagesAppBoards.length,
+            listImages: control.imagesAppBoards,
           ),
 
           SizedBox(height: 60,),
@@ -89,24 +75,10 @@ class Projetos extends StatelessWidget {
 
           SizedBox(height: 20,),
 
-          SizedBox(
+          ListviewImages(
             height: control.imagesHeight,
-            child: ListView.builder(
-              physics: BouncingScrollPhysics(),
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemCount: control.imagesSiteBoards.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
-                  child: Image.asset(
-                    control.imagesSiteBoards[index],
-                    height: control.imagesHeight,
-                    fit: BoxFit.cover,
-                  ),
-                );
-              },
-            ),
+            itemCount: control.imagesSiteBoards.length,
+            listImages: control.imagesSiteBoards,
           ),
 
           SizedBox(height: 60,),
@@ -129,24 +101,10 @@ class Projetos extends StatelessWidget {
 
           SizedBox(height: 20,),
 
-          SizedBox(
+          ListviewImages(
             height: control.imagesHeight,
-            child: ListView.builder(
-              physics: BouncingScrollPhysics(),
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemCount: control.imagesProjetoTeste.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
-                  child: Image.asset(
-                    control.imagesProjetoTeste[index],
-                    height: control.imagesHeight,
-                    fit: BoxFit.cover,
-                  ),
-                );
-              },
-            ),
+            itemCount: control.imagesProjetoTeste.length,
+            listImages: control.imagesProjetoTeste,
           ),
 
           SizedBox(height: 60,),
