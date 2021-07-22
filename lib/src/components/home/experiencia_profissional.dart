@@ -11,38 +11,41 @@ class ExperienciaProfissional extends StatelessWidget {
 
     return DelayedDisplay(
       delay: Duration(milliseconds: 100),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-          SizedBox(height: 30,),
+            SizedBox(height: 30,),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-            child: TextTitle(titulo: Strings.experiencia_Profissional.toUpperCase()),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              child: TextTitle(titulo: Strings.experiencia_Profissional.toUpperCase()),
+            ),
 
-          SizedBox(height: 60,),
+            SizedBox(height: 60,),
 
-          Text3LinesInformation(
-            text1: Strings.desenvolvedorDeSoftware.toUpperCase(),
-            text2: Strings.calmExperts,
-            text3: Strings.montrealQuebecCanada,
-            periodo: Strings.p2021,
-            icon: IconsData.experienciaProfissional,
-          ),
+            Text3LinesInformation(
+              text1: Strings.desenvolvedorDeSoftware.toUpperCase(),
+              text2: Strings.calmExperts,
+              text3: Strings.montrealQuebecCanada,
+              periodo: Strings.p2021,
+              icon: IconsData.experienciaProfissional,
+            ),
 
-          SizedBox(height: 40,),
+            SizedBox(height: 40,),
 
-          Text3LinesInformation(
-            text1: Strings.engenheiroDeSoftware.toUpperCase(),
-            text2: Strings.profisionalLiberal,
-            periodo: Strings.p2020_2021,
-            text3: Strings.voltaRedondaRioDeJaneiroBrasil,
-            icon: IconsData.experienciaProfissional,
-          ),
+            Text3LinesInformation(
+              text1: Strings.engenheiroDeSoftware.toUpperCase(),
+              text2: Strings.profisionalLiberal,
+              periodo: Strings.p2020_2021,
+              text3: Strings.voltaRedondaRioDeJaneiroBrasil,
+              icon: IconsData.experienciaProfissional,
+            ),
 
-        ],
+          ],
+        ),
       ),
     );
 

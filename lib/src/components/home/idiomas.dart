@@ -11,42 +11,45 @@ class Idiomas extends StatelessWidget {
 
     return DelayedDisplay(
       delay: Duration(milliseconds: 100),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-          SizedBox(height: 30,),
+            SizedBox(height: 30,),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-            child: TextTitle(titulo: Strings.idiomas.toUpperCase()),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              child: TextTitle(titulo: Strings.idiomas.toUpperCase()),
+            ),
 
-          SizedBox(height: 60,),
+            SizedBox(height: 60,),
 
-          Text2LinesImage(
-            text1: Strings.ingles.toUpperCase(),
-            text2: Strings.avancado,
-            image: Images.english,
-          ),
+            Text2LinesImage(
+              text1: Strings.ingles.toUpperCase(),
+              text2: Strings.avancado,
+              image: Images.english,
+            ),
 
-          SizedBox(height: 40,),
+            SizedBox(height: 40,),
 
-          Text2LinesImage(
-            text1: Strings.portugues.toUpperCase(),
-            text2: Strings.fluente,
-            image: Images.portuguese,
-          ),
+            Text2LinesImage(
+              text1: Strings.portugues.toUpperCase(),
+              text2: Strings.fluente,
+              image: Images.portuguese,
+            ),
 
-          SizedBox(height: 40,),
+            SizedBox(height: 40,),
 
-          Text2LinesImage(
-            text1: Strings.espanhol.toUpperCase(),
-            text2: Strings.basico,
-            image: Images.spanish,
-          ),
+            Text2LinesImage(
+              text1: Strings.espanhol.toUpperCase(),
+              text2: Strings.basico,
+              image: Images.spanish,
+            ),
 
-        ],
+          ],
+        ),
       ),
     );
 

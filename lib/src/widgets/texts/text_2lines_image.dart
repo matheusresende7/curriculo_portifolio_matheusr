@@ -29,36 +29,38 @@ class Text2LinesImage extends StatelessWidget {
 
         SizedBox(width: 10,),
 
-        Padding(
-          padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
 
-              Text(
-                this.text1,
-                style: TextStyle(
-                  fontSize: TextSizes.medium,
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 2,
+                Text(
+                  this.text1,
+                  style: TextStyle(
+                    fontSize: TextSizes.medium,
+                    color: Theme.of(context).primaryColor,
+                    fontWeight: FontWeight.w400,
+                    letterSpacing: 2,
+                  ),
                 ),
-              ),
 
-              SizedBox(height: 10,),
+                SizedBox(height: 10,),
 
-              Text(
-                this.text2,
-                style: TextStyle(
-                  fontSize: TextSizes.small,
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w600,
-                  fontStyle: FontStyle.italic,
-                  letterSpacing: 2,
+                Text(
+                  this.text2,
+                  style: TextStyle(
+                    fontSize: TextSizes.small,
+                    color: Theme.of(context).primaryColor,
+                    fontWeight: FontWeight.w600,
+                    fontStyle: FontStyle.italic,
+                    letterSpacing: 2,
+                  ),
                 ),
-              ),
 
-            ],
+              ],
+            ),
           ),
         ),
 

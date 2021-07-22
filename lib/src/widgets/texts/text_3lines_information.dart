@@ -32,79 +32,61 @@ class Text3LinesInformation extends StatelessWidget {
 
         SizedBox(width: 10,),
 
-        Padding(
-          padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
 
-              Text(
-                this.text1,
-                style: TextStyle(
-                  fontSize: TextSizes.medium,
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 2,
+                Text(
+                  this.text1,
+                  style: TextStyle(
+                    fontSize: TextSizes.medium,
+                    color: Theme.of(context).primaryColor,
+                    fontWeight: FontWeight.w400,
+                    letterSpacing: 2,
+                  ),
                 ),
-              ),
 
-              SizedBox(height: 10,),
+                SizedBox(height: 10,),
 
-              Row(
-                children: [
-
-                  Text(
-                    this.text2,
-                    style: TextStyle(
-                      fontSize: TextSizes.small,
-                      color: Theme.of(context).primaryColor,
-                      fontWeight: FontWeight.w600,
-                      fontStyle: FontStyle.italic,
-                      letterSpacing: 2,
-                    ),
+                RichText(
+                  text: TextSpan(
+                      style: TextStyle(
+                        fontSize: TextSizes.small,
+                        color: Theme.of(context).primaryColor,
+                        fontWeight: FontWeight.w600,
+                        fontStyle: FontStyle.italic,
+                        letterSpacing: 2,
+                      ),
+                      children: [
+                        TextSpan(text: this.text2,),
+                        TextSpan(
+                            text: ' | ',
+                            style: TextStyle(
+                              fontStyle: FontStyle.normal,
+                            )
+                        ),
+                        TextSpan(text: this.periodo,),
+                      ]
                   ),
-
-                  SizedBox(width: 10,),
-
-                  Text(
-                    '|',
-                    style: TextStyle(
-                      fontSize: TextSizes.small,
-                      color: Theme.of(context).primaryColor,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 2,
-                    ),
-                  ),
-
-                  SizedBox(width: 5,),
-
-                  Text(
-                    this.periodo,
-                    style: TextStyle(
-                      fontSize: TextSizes.small,
-                      color: Theme.of(context).primaryColor,
-                      fontWeight: FontWeight.w600,
-                      fontStyle: FontStyle.italic,
-                      letterSpacing: 2,
-                    ),
-                  ),
-
-                ],
-              ),
-
-              SizedBox(height: 10,),
-
-              Text(
-                this.text3,
-                style: TextStyle(
-                  fontSize: TextSizes.small,
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 2,
                 ),
-              ),
 
-            ],
+                SizedBox(height: 10,),
+
+                Text(
+                  this.text3,
+                  style: TextStyle(
+                    fontSize: TextSizes.small,
+                    color: Theme.of(context).primaryColor,
+                    fontWeight: FontWeight.w400,
+                    letterSpacing: 2,
+                  ),
+                ),
+
+              ],
+            ),
           ),
         ),
 

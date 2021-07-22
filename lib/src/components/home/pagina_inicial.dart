@@ -9,20 +9,23 @@ class PaginaInicial extends StatelessWidget {
 
     return DelayedDisplay(
       delay: Duration(milliseconds: 100),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-          SizedBox(height: 30,),
+            SizedBox(height: 30,),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-            child: TextTitle(titulo: Strings.pagina_Inicial.toUpperCase()),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              child: TextTitle(titulo: Strings.pagina_Inicial.toUpperCase()),
+            ),
 
-          SizedBox(height: 60,),
+            SizedBox(height: 60,),
 
-        ],
+          ],
+        ),
       ),
     );
 

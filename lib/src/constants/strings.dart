@@ -26,7 +26,7 @@ class Strings {
   static const String habilidades_Engenharia = 'Habilidades - Engenharia';
 
   ///Periodos
-  static const String p2020_2021 = '2020 - 2021';
+  static const String p2020_2021 = '2019 - 2021';
   static const String p2021 = '2021';
   static const String p2020 = '2020';
   static const String p2019 = '2019';
@@ -52,7 +52,7 @@ class Strings {
   static const String savingTime = 'Saving Time - Consultoria e Treinamento';
 
   ///Projetos
-  static const String acessePeloLink = '- Acesse pelo link:  ';
+  static const String acessePeloLink = '- Acesse pelo link: ';
   static const String cleanArchTDD = 'GITHUB: TDD - CLEAN ARCHTECTURE - RESPONSIVIDADE';
   static const String instagramClone = 'FIREBASE HOSTING: INSTAGRAM CLONE';
   static const String appBoards = 'PLAY STORE: BOARDS INVESTIMENTOS';

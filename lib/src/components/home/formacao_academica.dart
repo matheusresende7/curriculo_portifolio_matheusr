@@ -11,45 +11,48 @@ class FormacaoAcademica extends StatelessWidget {
 
     return DelayedDisplay(
       delay: Duration(milliseconds: 100),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-          SizedBox(height: 30,),
+            SizedBox(height: 30,),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-            child: TextTitle(titulo: Strings.formacao_Academica.toUpperCase()),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              child: TextTitle(titulo: Strings.formacao_Academica.toUpperCase()),
+            ),
 
-          SizedBox(height: 60,),
+            SizedBox(height: 60,),
 
-          Text2LinesInformation(
-            text1: Strings.mbaGestaoDaQualidade.toUpperCase(),
-            text2: Strings.unifoa,
-            periodo: Strings.p2020,
-            icon: IconsData.formacaoAcademica,
-          ),
+            Text2LinesInformation(
+              text1: Strings.mbaGestaoDaQualidade.toUpperCase(),
+              text2: Strings.unifoa,
+              periodo: Strings.p2020,
+              icon: IconsData.formacaoAcademica,
+            ),
 
-          SizedBox(height: 40,),
+            SizedBox(height: 40,),
 
-          Text2LinesInformation(
-            text1: Strings.engenhariaMecanica.toUpperCase(),
-            text2: Strings.unifoa,
-            periodo: Strings.p2019,
-            icon: IconsData.formacaoAcademica,
-          ),
+            Text2LinesInformation(
+              text1: Strings.engenhariaMecanica.toUpperCase(),
+              text2: Strings.unifoa,
+              periodo: Strings.p2019,
+              icon: IconsData.formacaoAcademica,
+            ),
 
-          SizedBox(height: 40,),
+            SizedBox(height: 40,),
 
-          Text2LinesInformation(
-            text1: Strings.tecnicoMecanica.toUpperCase(),
-            text2: Strings.etpc,
-            periodo: Strings.p2013,
-            icon: IconsData.formacaoAcademica,
-          ),
+            Text2LinesInformation(
+              text1: Strings.tecnicoMecanica.toUpperCase(),
+              text2: Strings.etpc,
+              periodo: Strings.p2013,
+              icon: IconsData.formacaoAcademica,
+            ),
 
-        ],
+          ],
+        ),
       ),
     );
 

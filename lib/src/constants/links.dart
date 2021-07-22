@@ -8,7 +8,7 @@ class Links {
 
   ///Projects
   static const String cleanArchTDD =
-      'https://github.com/matheusresende7/boards_investimentos';
+      'https://github.com/matheusresende7';
   static const String instagramClone =
       'https://calmfinance.web.app/#/';
   static const String appBoards =

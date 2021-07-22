@@ -11,27 +11,30 @@ class Certificacoes extends StatelessWidget {
 
     return DelayedDisplay(
       delay: Duration(milliseconds: 100),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-          SizedBox(height: 30,),
+            SizedBox(height: 30,),
 
-          Padding(
-            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-            child: TextTitle(titulo: Strings.certificacoes.toUpperCase()),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              child: TextTitle(titulo: Strings.certificacoes.toUpperCase()),
+            ),
 
-          SizedBox(height: 60,),
+            SizedBox(height: 60,),
 
-          Text2LinesInformation(
-            text1: Strings.greenBelt.toUpperCase(),
-            text2: Strings.savingTime,
-            periodo: Strings.p2020,
-            icon: IconsData.certificacoes,
-          ),
+            Text2LinesInformation(
+              text1: Strings.greenBelt.toUpperCase(),
+              text2: Strings.savingTime,
+              periodo: Strings.p2020,
+              icon: IconsData.certificacoes,
+            ),
 
-        ],
+          ],
+        ),
       ),
     );
 
