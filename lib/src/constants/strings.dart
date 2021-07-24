@@ -33,11 +33,11 @@ class Strings {
   static const String p2013 = '2013';
 
   ///Experiencia Profissional
-  static const String desenvolvedorDeSoftware = 'Desenvolvedor de Software';
+  static const String desenvolvedorDeSoftware = 'Software Developer';
   static const String calmExperts = 'Calm Experts';
   static const String montrealQuebecCanada = 'Montreal - Quebec - Canadá';
-  static const String engenheiroDeSoftware = 'Engenheiro de Software';
-  static const String profisionalLiberal = 'Profissional Liberal';
+  static const String engenheiroDeSoftware = 'Software Engineer';
+  static const String profisionalLiberal = 'Autônomo';
   static const String voltaRedondaRioDeJaneiroBrasil = 'Volta Redonda - Rio de Janeiro - Brasil';
 
   ///Formacao Academica
@@ -65,11 +65,11 @@ class Strings {
       '• Flutter - Dart - GetX\n'
       '• Mobile - Android - Web - Desktop\n'
       '• TDD - Clean Archtecture - Clean Code\n'
-      '• Tests: Unit - Widget - Integration - End to End\n'
+      '• Tests: Unit - Widget - Integration\n'
       '• Pipeline CI/CD - Github Actions\n'
       '• MVC\n'
-      '• API - Postman - GraphQl\n'
-      '• SQLite - Firebase - CRUD\n'
+      '• API - Postman - GraphQL\n'
+      '• Firebase - SQLite - CRUD\n'
       '• Frontend - Html - Css - Bootstrap\n'
       '• UI & UX Design - Figma - Canva\n'
       '• Trello - Jira\n'
