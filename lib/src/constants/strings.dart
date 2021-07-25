@@ -26,7 +26,8 @@ class Strings {
   static const String habilidades_Engenharia = 'Habilidades - Engenharia';
 
   ///Periodos
-  static const String p2020_2021 = '2019 - 2021';
+  static const String p2020_2021 = '2020 - 2021';
+  static const String p2019_2020 = '2019 - 2020';
   static const String p2021 = '2021';
   static const String p2020 = '2020';
   static const String p2019 = '2019';
@@ -34,10 +35,12 @@ class Strings {
 
   ///Experiencia Profissional
   static const String desenvolvedorDeSoftware = 'Software Developer';
+  static const String desenvolvedorMobile = 'Desenvolvedor Mobile';
+  static const String consultorFinanceiro = 'Consultor Financeiro';
+  static const String assessorDeAnalise = 'Assessor de Análise';
   static const String calmExperts = 'Calm Experts';
+  static const String profisionalLiberal = 'Profissional Liberal';
   static const String montrealQuebecCanada = 'Montreal - Quebec - Canadá';
-  static const String engenheiroDeSoftware = 'Software Engineer';
-  static const String profisionalLiberal = 'Autônomo';
   static const String voltaRedondaRioDeJaneiroBrasil = 'Volta Redonda - Rio de Janeiro - Brasil';
 
   ///Formacao Academica

@@ -56,10 +56,11 @@ class HomeController extends GetxController {
 
 
   //*******************************NAV BUTTONS**********************************
-  String tabButton = Strings.paginaInicial;
+  //String tabButton = Strings.paginaInicial;
+  String tabButton = Strings.experienciaProfissional;
 
   List<String> tabButtonOptionsStrings = [
-    Strings.paginaInicial,
+    //Strings.paginaInicial,
     Strings.experienciaProfissional,
     Strings.formacaoAcademica,
     Strings.certificacoes,
@@ -78,7 +79,8 @@ class HomeController extends GetxController {
 
 
   //**************************MAIN CONTENT**************************************
-  String mainContent = Strings.paginaInicial;
+  //String mainContent = Strings.paginaInicial;
+  String mainContent = Strings.experienciaProfissional;
 
   Widget widgetMainContent () {
     switch (mainContent) {

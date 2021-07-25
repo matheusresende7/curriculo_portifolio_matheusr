@@ -31,7 +31,7 @@ class Projetos extends StatelessWidget {
 
           SizedBox(height: 60,),
 
-          Padding(
+          /*Padding(
             padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
             child: Text2LinesProjects(
               text1: Strings.cleanArchTDD.toUpperCase(),
@@ -55,7 +55,7 @@ class Projetos extends StatelessWidget {
             ),
           ),
 
-          SizedBox(height: 60,),
+          SizedBox(height: 60,),*/
 
           Padding(
             padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),

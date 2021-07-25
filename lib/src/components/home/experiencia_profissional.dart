@@ -37,12 +37,34 @@ class ExperienciaProfissional extends StatelessWidget {
             SizedBox(height: 40,),
 
             Text3LinesInformation(
-              text1: Strings.engenheiroDeSoftware.toUpperCase(),
+              text1: Strings.desenvolvedorMobile.toUpperCase(),
               text2: Strings.profisionalLiberal,
               periodo: Strings.p2020_2021,
               text3: Strings.voltaRedondaRioDeJaneiroBrasil,
               icon: IconsData.experienciaProfissional,
             ),
+
+            SizedBox(height: 40,),
+
+            Text3LinesInformation(
+              text1: Strings.consultorFinanceiro.toUpperCase(),
+              text2: Strings.profisionalLiberal,
+              periodo: Strings.p2020,
+              text3: Strings.voltaRedondaRioDeJaneiroBrasil,
+              icon: IconsData.experienciaProfissional,
+            ),
+
+            SizedBox(height: 40,),
+
+            Text3LinesInformation(
+              text1: Strings.assessorDeAnalise.toUpperCase(),
+              text2: Strings.profisionalLiberal,
+              periodo: Strings.p2019_2020,
+              text3: Strings.voltaRedondaRioDeJaneiroBrasil,
+              icon: IconsData.experienciaProfissional,
+            ),
+
+            SizedBox(height: 60,),
 
           ],
         ),
